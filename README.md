@@ -4,13 +4,13 @@
 This is a personal project that uses computer vision and pose estimation to control computer inputs (keyboard and mouse) based on body movements. The system leverages the MediaPipe Pose solution to detect human landmarks and translates specific gestures into actions such as clicking, jumping, or moving the mouse cursor.
 
 ## Features
-- **Squat Detection**: Squatting triggers the 'Ctrl' key press.
+- **Squat Gesture**: Squatting triggers the 'Ctrl' key press.
 - **Jump Gesture**: Raising both hands triggers the 'Space' key press.
 - **Mouse Control**: 
   - Prayer pose (hands close together) moves the mouse cursor up or down.
   - Elbow positioning controls left or right mouse movement.
 - **Click Actions**: Specific arm angles trigger left or right mouse clicks.
-- **Walk/Run**: Leg movements control the 'W' key for walking or a combination of 'W', 'Shift', and 'Space' for running/jumping.
+- **Walk/Run**: Leg movements (left or right at a time) control the 'W' key for walking or a combination of 'W', 'Shift', and 'Space' for running/jumping.
 
 ## Requirements
 - Python 3.x
@@ -35,10 +35,10 @@ This is a personal project that uses computer vision and pose estimation to cont
    ```
 2. Position yourself in front of the webcam.
 3. Perform gestures to control inputs:
-   - I have interchanged 'Ctrl' and 'Shift' in my game for my accessibility, # MAKE SURE YOU CHANGE THIS PART IN YOUR GAME OR IN THE CODE!
+   - I have interchanged 'Ctrl' and 'Shift' in my game for my accessibility, **MAKE SURE YOU CHANGE THIS PART IN YOUR GAME OR IN THE CODE!**
    - Squat to press 'Ctrl'.
    - Raise both hands to jump ('Space').
-   - Bring hands close together and move them up/down for mouse cursor movement.
+   - Bring your hands close together and move them up/down for mouse cursor movement.
    - Adjust arm angles for left/right clicks.
    - Move legs to simulate walking or running.
 
@@ -46,7 +46,7 @@ This is a personal project that uses computer vision and pose estimation to cont
 
 
 ## Notes
-- The script assumes additional Python scripts (`mouse_up.py`, `mouse_down.py`, `mouse_left.py`, `mouse_right.py`) are present in the specified directory for mouse movement. Ensure these are available or modify the paths accordingly.
+- The script requires additional Python scripts (`mouse_up.py`, `mouse_down.py`, `mouse_left.py`, `mouse_right.py`) to be present in the same directory for mouse movement. Ensure these are available or modify the paths accordingly.
 - The system is designed for real-time webcam input and does not process static images by default (though the code includes commented-out static image processing).
 - Adjust the landmark thresholds (e.g., `hand_distance`, `normalfactor`) based on your setup for better accuracy.
 
