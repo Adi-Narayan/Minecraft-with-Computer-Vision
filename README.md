@@ -35,16 +35,15 @@ This is a personal project that uses computer vision and pose estimation to cont
    ```
 2. Position yourself in front of the webcam.
 3. Perform gestures to control inputs:
+   - I have interchanged 'Ctrl' and 'Shift' in my game for my accessibility, # MAKE SURE YOU CHANGE THIS PART IN YOUR GAME OR IN THE CODE!
    - Squat to press 'Ctrl'.
    - Raise both hands to jump ('Space').
    - Bring hands close together and move them up/down for mouse cursor movement.
    - Adjust arm angles for left/right clicks.
    - Move legs to simulate walking or running.
 
-4. Press `Esc` to exit the program.
+5. Press `Esc` to exit the program.
 
-## Project Image
-![Pose Detection in Action](https://github.com/user-attachments/assets/1940b3e5-b9a3-42ed-abf8-7b56e0e74724)
 
 ## Notes
 - The script assumes additional Python scripts (`mouse_up.py`, `mouse_down.py`, `mouse_left.py`, `mouse_right.py`) are present in the specified directory for mouse movement. Ensure these are available or modify the paths accordingly.
