@@ -44,7 +44,7 @@ This is a personal project that uses computer vision and pose estimation to cont
 4. Press `Esc` to exit the program.
 
 ## Project Image
-![Pose Detection in Action](path/to/your/image.png)
+![Pose Detection in Action](https://github.com/user-attachments/assets/1940b3e5-b9a3-42ed-abf8-7b56e0e74724)
 
 ## Notes
 - The script assumes additional Python scripts (`mouse_up.py`, `mouse_down.py`, `mouse_left.py`, `mouse_right.py`) are present in the specified directory for mouse movement. Ensure these are available or modify the paths accordingly.
